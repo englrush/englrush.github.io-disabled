@@ -7,18 +7,20 @@ body{
 // header
 
 .header {
-    // margin-bottom: 50px;
 
     &__inner {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         background-color: #C5F513;
-        min-height: 80px;
+        min-height: 60px;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 700;
     }
 
     &__inner-login-btn {
-        padding: 15px 38px;
+        padding: 12px 38px;
         transition: all .3s;
         border-radius: 5px;
         border: 2px solid #000;
@@ -31,11 +33,11 @@ body{
     }
 
     &__inner-sign-btn {
-        padding: 15px 45px;
+        padding: 12px 45px;
         color: #F5F5F5;
         border: 2px solid #000;
         background-color: #112639;
-        margin: 0 0 0 10px;
+        margin-left: 10px;
         transition: all .3s;
         border-radius: 5px;
 
@@ -50,7 +52,9 @@ body{
         margin: 0 20px;
     }
 }
-
+.avatar-img{
+    max-width: 60px;
+}
 
 
 
@@ -65,8 +69,8 @@ body{
 // aside 
 
 .aside-bar {
-    max-width: 260px;
-    min-height: calc(100vh - 80px);
+    max-width: 220px;
+    min-height: calc(100vh - 60px);
     background-color: #1D3143;
     position: fixed;
     top: 0;
@@ -75,19 +79,18 @@ body{
 
 
     &__list {
-        font-size: 20px;
-        line-height: 24px;
-        align-items: center;
+        font-size: 16px;
+        line-height: 19px;
         color: #FFFFFF;
     }
 
     &__item {
         font-weight: 700;
-        padding: 17px 117px 17px 40px;
+        padding: 18px 0 15px 44px;
         border-top: 1px solid #255B76;
-        height: 55px;
+        min-height: 53px;
         cursor: pointer;
-        width: 260px;
+        width: 220px;
         transition: all .3s;
         &:hover{
             background-color: #87CEEB;
@@ -96,6 +99,10 @@ body{
         }
     }
     &__link {
+        max-width: 75px;
+        &:first-child{
+            max-width: 100% ;
+        }
     }
 }
 
@@ -129,7 +136,7 @@ body{
         align-items: center;
         gap: 12px;
         background-color:#F6008F;
-        min-height: 70px;
+        min-height: 60px;
         max-width: 100%;
         font-weight: 700;
     }
