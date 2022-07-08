@@ -1,5 +1,5 @@
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Fira Sans", sans-serif;
 }
 
 .header__inner {
@@ -13,10 +13,12 @@ body {
   font-weight: 700;
 }
 .header__inner-login-btn {
-  padding: 12px 38px;
+  padding: 10px 38px;
   transition: all 0.3s;
   border-radius: 5px;
   border: 2px solid #000;
+  height: 40px;
+  max-width: 120px;
 }
 .header__inner-login-btn:hover {
   color: #F5F5F5;
@@ -24,13 +26,15 @@ body {
   border: 2px solid #F6008F;
 }
 .header__inner-sign-btn {
-  padding: 12px 45px;
+  padding: 12px 28.5px;
   color: #F5F5F5;
   border: 2px solid #000;
   background-color: #112639;
   margin-left: 10px;
   transition: all 0.3s;
   border-radius: 5px;
+  height: 40px;
+  width: 120px;
 }
 .header__inner-sign-btn:hover {
   color: #112639;
@@ -65,12 +69,12 @@ body {
 }
 .aside-bar__item {
   font-weight: 700;
-  padding: 18px 0 15px 44px;
+  padding: 16.5px 0 13.5px 44px;
   border-top: 1px solid #255B76;
-  min-height: 53px;
   cursor: pointer;
   width: 220px;
   transition: all 0.3s;
+  min-height: 50px;
 }
 .aside-bar__item:hover {
   background-color: #87CEEB;
@@ -78,15 +82,12 @@ body {
   max-width: 100%;
 }
 .aside-bar__link {
-  max-width: 75px;
-}
-.aside-bar__link:first-child {
   max-width: 100%;
 }
 
 .logo {
-  max-width: 260px;
-  min-height: 80px;
+  max-width: 220px;
+  min-height: 60px;
   padding: 0 45px;
   background-color: #12263A;
   display: flex;
@@ -114,10 +115,10 @@ body {
   font-weight: 700;
 }
 .add__inner-text {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 22px;
   color: #FFFFFF;
-  margin-left: 260px;
+  margin-left: 220px;
 }
 .add__inner-link {
   padding: 11px 16px;
