@@ -7,7 +7,7 @@ body{
 // header
 
 .header {
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
 
     &__inner {
         display: flex;
@@ -252,5 +252,87 @@ body{
     &:hover{
         background-color:#C5F513;
         color: #112639;
+    }
+}
+
+
+.topic-name {
+    margin: 40px 60px 0 320px;
+
+    &__container {
+        max-width: 1590px;
+        padding: 20px 25px;
+        margin: 0 auto;
+        background: #ABDCF1;
+        border-radius: 5px;
+    }
+
+    &__inner-top {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    &__avatar { 
+    }
+
+    &__img {
+        border: 1px solid #2E86AA;
+        border-radius: 5px;
+        max-width: 30px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 19px;
+        color: #12263A;
+        transition: all .3s;
+        &:hover{
+            color: #F6008F;
+        }
+    }
+
+    &__time {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #1D3143;
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 24px;
+        color: #12263A;
+        margin-bottom: 16px;
+        transition: all .3s;
+        &:hover{
+            color: #2E86AA;
+        }
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 19px;
+        color: #000000;
+        max-width: 1490px;
+        margin-bottom: 22px;
+    }
+
+    &__btn {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;        
+        color: #FFFFFF;
+        background: #112639;
+        border-radius: 5px;
+        padding: 10px 13px;
+        transition: all .3s;
+        &:hover{
+            background: #C5F513;
+            color: #112639;
+        }
     }
 }
