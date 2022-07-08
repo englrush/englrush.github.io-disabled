@@ -25,7 +25,7 @@ body{
         border-radius: 5px;
         border: 2px solid #000;
         height: 40px;
-        max-width: 120px;
+        width: 120px;
 
         &:hover{
             color: #F5F5F5;
@@ -35,7 +35,7 @@ body{
     }
 
     &__inner-sign-btn {
-        padding: 12px 28.5px;
+        padding: 10px 28.5px;
         color: #F5F5F5;
         border: 2px solid #000;
         background-color: #112639;
@@ -44,6 +44,7 @@ body{
         border-radius: 5px;
         height: 40px;
         width: 120px;
+        text-align: center;
 
         &:hover{
             color: #112639;
@@ -171,8 +172,7 @@ body{
 
 
 .form {
-    margin-left: 260px;
-    margin: 50px 50px 20px 310px;
+    margin: 50px 50px 20px 270px;
 
     &__inner-top {
         display: flex;
@@ -274,7 +274,7 @@ body{
 
 
 .topic-name {
-    margin: 40px 50px 0 310px;
+    margin: 40px 50px 0 270px;
 
     &__container {
         max-width: 1590px;
