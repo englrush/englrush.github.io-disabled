@@ -34,7 +34,7 @@ body {
   transition: all 0.3s;
   border-radius: 5px;
   height: 40px;
-  width: 120px;
+  width: 150px;
   text-align: center;
 }
 .header__inner-sign-btn:hover {
