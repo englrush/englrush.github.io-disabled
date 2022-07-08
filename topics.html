@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -23,17 +27,22 @@
         <div class="header__inner">
             <a class="header__inner-login-btn" href="#">Login</a>
             <a class="header__inner-sign-btn" href="#">Sign up</a>
-            <a class="header__inner-avatar" href="#"><img class="avatar-img" src="images/avatar.svg" alt=""></a>
+            <a class="header__inner-avatar" href="index.html"><img class="avatar-img" src="images/avatar.svg" alt=""></a>
         </div>
     </header>
     <div class="aside-add">
         <aside class="aside-bar">
-            <a class="logo" href="#"><img class="logo__img" src="images/logo.svg" alt=""></a>
+            <a class="logo" href="index.html"><img class="logo__img" src="images/logo.svg" alt=""></a>
             <ul class="aside-bar__list">
-                <li class="aside-bar__item"><a class="aside-bar__link" href="new-topic.html">New Topic</a></li>
-                <li class="aside-bar__item"><a class="aside-bar__link" href="#">New Quiz</a></li>
-                <li class="aside-bar__item"><a class="aside-bar__link" href="#">Topics</a></li>
-                <li class="aside-bar__item"><a class="aside-bar__link" href="#">Quizess</a></li>
+                <a class="aside-bar__item" href="new-topic.html">
+                    <li class="aside-bar__link">New Topic</li>
+                </a><a class="aside-bar__item" href="#">
+                    <li class="aside-bar__link">New Quiz</li>
+                </a><a class="aside-bar__item" href="topics.html">
+                    <li class="aside-bar__link">Topics</li>
+                </a><a class="aside-bar__item" href="#">
+                    <li class="aside-bar__link">Quizess</li>
+                </a>
             </ul>
         </aside>
         <div class="add">
@@ -52,7 +61,8 @@
                     <img class="topic-name__img" src="images/avatar-for-topic-name.png" alt="">
                 </a>
                 <h3 class="topic-name__subtitle">Author</h3>
-                <time class="topic-name__time" datetime="04-01">01 April at 20:45</time>
+                <!-- <time class="topic-name__time">01 April at 20:45</time> -->
+                <p class="topic-name__time">01 April at 20:45</p>
             </div>
             <h2 class="topic-name__title">Topic Name</h2>
             <p class="topic-name__text">Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse

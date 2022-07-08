@@ -58,15 +58,18 @@ body {
   color: #FFFFFF;
 }
 .aside-bar__item {
+  font-weight: 700;
   padding: 17px 117px 17px 40px;
   border-top: 1px solid #255B76;
   height: 55px;
   cursor: pointer;
+  width: 260px;
   transition: all 0.3s;
 }
 .aside-bar__item:hover {
   background-color: #87CEEB;
   color: #1d3143;
+  max-width: 100%;
 }
 .logo {
   max-width: 260px;
@@ -119,6 +122,7 @@ body {
 
 .form {
   margin-left: 260px;
+  margin: 50px 50px 20px 310px;
 }
 .form__inner-top {
   display: flex;
@@ -215,7 +219,7 @@ body {
 }
 
 .topic-name {
-  margin: 40px 60px 0 320px;
+  margin: 40px 50px 0 310px;
 }
 .topic-name__container {
   max-width: 1590px;
@@ -235,12 +239,17 @@ body {
   border: 1px solid #2E86AA;
   border-radius: 5px;
   max-width: 30px;
+  transition: all 0.3s;
+}
+.topic-name__img:hover {
+  border: 1px solid #F6008F;
 }
 .topic-name__subtitle {
   font-size: 16px;
   line-height: 19px;
   color: #12263A;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .topic-name__subtitle:hover {
   color: #F6008F;
@@ -257,12 +266,14 @@ body {
   color: #12263A;
   margin-bottom: 16px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .topic-name__title:hover {
   color: #2E86AA;
 }
 .topic-name__text {
-  font-size: 15px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 19px;
   color: #000000;
   max-width: 1490px;
