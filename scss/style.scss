@@ -151,7 +151,7 @@ body{
     }
 
     &__inner-link {
-        padding: 11px 16px;
+        padding:11px 13px 8px;
         font-size: 16px;
         line-height: 19px;
         text-align: center;
@@ -159,6 +159,8 @@ body{
         background-color: #112639;
         border-radius: 5px;
         transition: all .3s;
+        width: 150px;
+        height: 40px;
 
         &:hover{
             color: #112639;
@@ -178,14 +180,14 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 13px;
     }
 
     &__title {
         font-size: 24px;
         line-height: 29px;
         color: #12263A;
-        margin-top: 35px;
+        margin-top: 25px;
     }
 }
 .container{
@@ -203,7 +205,7 @@ body{
     font-size: 20px;
     line-height: 24px;
     color: #12263A;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 .column-input {
     // width: 300px;
@@ -213,7 +215,7 @@ body{
     border: 1px solid #2E86AA;;
     line-height: 32px;
     font-family: 'Inter', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 .c-1{
     width: 300px;
@@ -229,7 +231,7 @@ body{
 .column-3 {
 }
 .textarea {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 .text-for-topics {
     width: 100%;
@@ -238,7 +240,7 @@ body{
     border: 1px solid #2E86AA;
     font-size: 16px;
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .form-buttons {
@@ -254,9 +256,11 @@ body{
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
-    padding: 14px 38px 12px 38px;
+    padding: 12px 38px;
     border-radius: 5px;
     transition: all .3s;
+    width: 150px;
+    height: 40px;
 
     &:hover{
         background-color: #F6008F;
@@ -269,9 +273,11 @@ body{
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
-    padding: 14px 38px 12px 38px;
+    padding: 12px 38px;
     border-radius: 5px;
     transition: all .3s;
+    width: 150px;
+    height: 40px;
     &:hover{
         background-color:#C5F513;
         color: #112639;
