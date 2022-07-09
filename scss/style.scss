@@ -172,7 +172,7 @@ body{
 
 
 .form {
-    margin: 50px 50px 20px 270px;
+    margin: 40px 100px 20px 320px;
 
     &__inner-top {
         display: flex;
@@ -182,38 +182,47 @@ body{
     }
 
     &__title {
-        font-size: 36px;
-        line-height: 44px;
+        font-size: 24px;
+        line-height: 29px;
         color: #12263A;
-        margin-top: 50px;
+        margin-top: 35px;
     }
 }
 .container{
-    max-width: 1500px;
-    padding: 0 30px;
+    max-width: 1370px;
+    // padding: 0 30px;
     margin: 0 auto;
 }
 .writing-columns {
     display: flex;
-    gap: 25px;
+    gap: 20px;
 }
 .column-1 {
 }
 .column-subtitle {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 20px;
+    line-height: 24px;
     color: #12263A;
     margin-bottom: 15px;
 }
 .column-input {
-    width: 270px;
-    height: 40px;
-    background: #ABDCF1;
-    font-size: 20px;
-    border: 1px solid #112639;
+    // width: 300px;
+    height: 25px;
+    background: #C3E6F5;
+    font-size: 16px;
+    border: 1px solid #2E86AA;;
     line-height: 32px;
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
+}
+.c-1{
+    width: 300px;
+}
+.c-2{
+    width: 200px;
+}
+.c-3{
+    width: 150px;
 }
 .column-2 {
 }
@@ -225,9 +234,9 @@ body{
 .text-for-topics {
     width: 100%;
     height: 670px;
-    background: #ABDCF1;
-    font-size: 20px;
-    border: 1px solid #112639;
+    background: #C3E6F5;
+    border: 1px solid #2E86AA;
+    font-size: 16px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
 }
@@ -242,12 +251,13 @@ body{
 .post-later {
     background-color: #112639;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 19px;
     color: #FFFFFF;
-    padding: 15px 53px;
+    padding: 14px 38px 12px 38px;
     border-radius: 5px;
     transition: all .3s;
+
     &:hover{
         background-color: #F6008F;
         color: #112639;
@@ -256,10 +266,10 @@ body{
 .post-now{
     background-color: #112639;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 19px;
     color: #FFFFFF;
-    padding: 15px 77px;
+    padding: 14px 38px 12px 38px;
     border-radius: 5px;
     transition: all .3s;
     &:hover{
@@ -274,14 +284,14 @@ body{
 
 
 .topic-name {
-    margin: 40px 50px 0 270px;
+    margin: 60px 150px 20px 370px;
 
     &__container {
         max-width: 1590px;
         padding: 20px 25px;
         margin: 0 auto;
-        background: #ABDCF1;
-        border-radius: 5px;
+        background: #C3E6F5;
+        border-radius: 10px;
     }
 
     &__inner-top {
@@ -289,7 +299,7 @@ body{
         align-items: center;
         justify-content: flex-start;
         gap: 10px;
-        margin-bottom: 15px;
+        margin-bottom: 14px;
     }
 
     &__avatar { 
@@ -341,7 +351,7 @@ body{
         line-height: 19px;
         color: #000000;
         max-width: 1490px;
-        margin-bottom: 22px;
+        margin-bottom: 15px;
     }
 
     &__btn {
@@ -352,7 +362,7 @@ body{
         color: #FFFFFF;
         background: #112639;
         border-radius: 5px;
-        padding: 10px 13px;
+        padding: 9px 22px;
         transition: all .3s;
         &:hover{
             background: #C5F513;
