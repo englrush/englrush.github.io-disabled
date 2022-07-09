@@ -174,7 +174,7 @@ body{
 
 
 .form {
-    margin: 40px 180px 20px 380px;
+    // margin: 40px 180px 20px 380px;
 
     &__inner-top {
         display: flex;
@@ -191,7 +191,7 @@ body{
     }
 }
 .container{
-    max-width: 1340px;
+    // max-width: 1340px;
     margin: 0 auto;
 }
 .writing-columns {
@@ -288,10 +288,9 @@ body{
 
 
 .topic-name {
-    margin: 40px 150px 20px 370px;
+    // margin: 40px 150px 20px 370px;
 
     &__container {
-        max-width: 1400px;
         padding: 19px 25px;
         margin: 0 auto;
         background: #C3E6F5;
@@ -373,4 +372,16 @@ body{
             color: #112639;
         }
     }
+}
+
+.wrapper{
+    max-width: calc(100vw - 220px);
+    height: calc(100vh - 60px);
+    margin-left: 220px;
+    margin-bottom: 80px;
+}
+.mini-wrapper{
+    max-width: 100vw;
+    height: calc(100% - 40px);
+    margin: 20px 5%;
 }
