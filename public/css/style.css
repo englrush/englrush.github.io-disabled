@@ -250,6 +250,7 @@ body {
   margin: 0 auto;
   background: #C3E6F5;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 .topic-name__inner-top {
   display: flex;

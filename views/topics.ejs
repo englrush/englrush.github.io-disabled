@@ -7,35 +7,33 @@
             <%- include ('./partials/aside-add') %>
                 <div class="wrapper">
                     <div class="mini-wrapper">
-                        <div class="topic-name">
-                            <div class="topic-name__container">
-                                <div class="topic-name__inner-top">
-                                    <a class="topic-name__avatar" href="#">
-                                        <img class="topic-name__img" src="images/avatar-for-topic-name.png" alt="">
-                                    </a>
-                                    <h3 class="topic-name__subtitle">Author</h3>
-                                    <p class="topic-name__time">01 April at 20:45</p>
+                        <% if(topics.length) { %>
+                            <% topics.forEach(({id, title, text, createdAt, author})=> { %>
+                                <div class="topic-name">
+                                    <div class="topic-name__container">
+                                        <div class="topic-name__inner-top">
+                                            <a class="topic-name__avatar" href="#">
+                                                <img class="topic-name__img" src="images/avatar-for-topic-name.png"
+                                                    alt="">
+                                            </a>
+                                            <h3 class="topic-name__subtitle">
+                                                <%= author %>
+                                            </h3>
+                                            <p class="topic-name__time">
+                                                <%= createdAt.toLocaleDateString() %>
+                                            </p>
+                                        </div>
+                                        <h2 class="topic-name__title"><a href="topic/<%= id %>">
+                                                <%= title %>
+                                            </a></h2>
+                                        <p class="topic-name__text">
+                                            <%= text %>
+                                        </p>
+                                        <a class="topic-name__btn" href="#">Choose topic</a>
+                                    </div>
                                 </div>
-                                <h2 class="topic-name__title">Topic Name</h2>
-                                <p class="topic-name__text">Aliqua id fugiat nostrud irure ex duis ea quis id quis ad
-                                    et. Sunt qui esse
-                                    pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure
-                                    tempor cupidatat
-                                    incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud
-                                    irure ex duis ea
-                                    quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim
-                                    tempor enim. Elit
-                                    aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt
-                                    nisi.Aliqua id fugiat
-                                    nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt
-                                    mollit dolore cillum
-                                    minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut
-                                    voluptate aute id
-                                    deserunt nisi.Aliqua id fugiat nostrud irure ex...
-                                </p>
-                                <a class="topic-name__btn" href="#">Choose topic</a>
-                            </div>
-                        </div>
+                                <% }) %>
+                                    <% } %>
                     </div>
                 </div>
     </body>
