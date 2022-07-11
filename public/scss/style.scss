@@ -198,8 +198,6 @@ body{
     display: flex;
     gap: 20px;
 }
-.column-1 {
-}
 .column-subtitle {
     font-size: 20px;
     line-height: 24px;
@@ -223,10 +221,6 @@ body{
 }
 .c-3{
     width: 150px;
-}
-.column-2 {
-}
-.column-3 {
 }
 .textarea {
     margin-bottom: 15px;
@@ -303,9 +297,6 @@ body{
         justify-content: flex-start;
         gap: 10px;
         margin-bottom: 14px;
-    }
-
-    &__avatar { 
     }
 
     &__img {
