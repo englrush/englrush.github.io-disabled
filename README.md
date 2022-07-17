@@ -1,1 +1,1 @@
-# https://englrush.github.io
+# https://englrush.herokuapp.com
