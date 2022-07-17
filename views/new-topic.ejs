@@ -28,15 +28,68 @@
                                 </div>
                                 <div class="textarea">
                                     <textarea class="text-for-topics" type="text" name="text"></textarea>
-                                </div>  
+                                </div>
                                 <div class="form-buttons">
-                                    <input class="post-later" type="submit" value="Post later">
-                                    <input class="post-now" type="submit" value="Post now">
+                                    <div class="format-btns">
+                                        <button type="button" class="format-btn" name="KeyB" style="font-weight: bold">B</button>
+                                        <button type="button" class="format-btn" name="KeyI" style="font-style: italic">I</button>
+                                        <button type="button" class="format-btn" name="KeyU" style="text-decoration: underline">U</button>
+                                        <button type="button" class="format-btn" name="KeyS" style="text-decoration: line-through">S</button>
+                                        <button type="button" class="format-btn" name="KeyBr">Br</button>
+                                    </div>
+                                    <div class="post-btns">
+                                        <button class="post-later">Post later</button>
+                                        <button class="post-now">Post now</button>
+                                    </div>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
+                <script>
+                    let text = document.querySelector('.text-for-topics')
+
+                    let hotKeys = ['KeyB', 'KeyI', 'KeyU', 'KeyS']
+                    let tagKeys = ['b', 'i', 'u', 's']
+                    let buttons = document.querySelector('.format-btns')
+
+                    buttons.addEventListener('mousedown', (e) => {
+                        if (e.target.closest('.format-btn')) {
+                            e.preventDefault() // Disable focus on button
+                            textEditor(e.target.name)
+                        }
+                    })
+
+                    text.addEventListener('keydown', (e) => textEditor(e))
+
+                    function textEditor(e) {
+                        let startSelected = text.selectionStart;
+                        let endSelected = text.selectionEnd;
+                        let selectedText = text.value.substring(startSelected, endSelected)
+                        if (e == 'KeyBr') {
+                            text.value = text.value.substring(0, startSelected) + '<br>' + text.value.substring(startSelected)
+                        }
+                        else {  
+                            for (let i = 0; i < hotKeys.length; i++) {
+                                if (((e.ctrlKey && e.code == hotKeys[i]) || e == hotKeys[i]) && selectedText) {
+                                    let fullText = text.value.substring(0, startSelected) // before Selected
+                                    if (selectedText.includes('<' + tagKeys[i] + '>') && selectedText.includes('</' + tagKeys[i] + '>')) {
+                                        while (selectedText.includes('<' + tagKeys[i] + '>')) {
+                                            selectedText = selectedText.replace('<' + tagKeys[i] + '>', '').replace('</' + tagKeys[i] + '>', '') // Selected
+                                        }
+                                        fullText += selectedText // before Selected + Selected
+                                    }
+                                    else {
+                                        fullText += '<' + tagKeys[i] + '>' + selectedText + '</' + tagKeys[i] + '>' // before Selected + Selected
+                                    }
+                                    fullText += text.value.substring(endSelected) // before Selected + Selected + after Selected
+                                    text.value = fullText
+                                }
+                            }
+                        }
+                    }
+                </script>
+
     </body>
 
 </html>

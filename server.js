@@ -1,15 +1,16 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const Topic = require('./models/topic')
+require('dotenv').config()
 
 const app = express()
 
 mongoose
-    .connect('mongodb+srv://admin:admin123@cluster0.h5kmq.mongodb.net/?retryWrites=true&w=majority')
+    .connect(process.env.MONGO_URL)
     .then(() => console.log("Connected to MongoDB"))
     .catch((e) => console.log(e))
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT
 app.listen(PORT, () => console.log("http://localhost:5000"))
 
 app.set('view engine', 'ejs')
@@ -26,7 +27,7 @@ app.get('/topics', (req, res) => {
     const title = "Topics"
     Topic
         .find()
-        .sort({ createAd: -1 })
+        .sort({ createAd: 1 })
         .then((topics) => res.render('topics', { title, topics }))
         .catch((e) => {
             console.log(e)
@@ -44,12 +45,11 @@ app.post('/new-topic', (req, res) => {
     const topic = new Topic({ title, author, text })
     topic
         .save()
-        //.then(res.render('topics', {title: 'Error', topics}))
         .then((result) => res.redirect('/topics'))
         .catch((e) => {
             console.log(e)
             res.send(e)
-            //res.render('error', { title: 'Error' })
+            res.render('error', { title: 'Error' })
         })
 
 })
