@@ -15,6 +15,7 @@
   "bugs": {
     "url": "https://github.com/englrush/englrush.github.io/issues"
   },
+  "homepage": "https://github.com/englrush/englrush.github.io#readme",
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.1",
