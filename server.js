@@ -10,8 +10,7 @@ mongoose
     .then(() => console.log("Connected to MongoDB"))
     .catch((e) => console.log(e))
 
-const PORT = process.env.PORT
-app.listen(PORT, () => console.log("http://localhost:5000"))
+app.listen(process.env.PORT, () => console.log("http://localhost:" + process.env.PORT))
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'));
