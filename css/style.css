@@ -341,7 +341,6 @@ body {
 .del-ed {
   margin-left: auto;
   margin-top: 6px;
-  gap: 10px;
 }
 .del-ed__edit {
   background-color: #1D3143;
