@@ -338,6 +338,21 @@ body {
   color: #112639;
 }
 
+.del-ed {
+  margin-left: auto;
+  margin-top: 6px;
+  gap: 10px;
+}
+.del-ed__edit {
+  background-color: #1D3143;
+  padding: 8px;
+  margin-right: 6px;
+}
+.del-ed__delete {
+  background-color: #1D3143;
+  padding: 8px;
+}
+
 .wrapper {
   max-width: calc(100vw - 220px);
   margin-left: 220px;

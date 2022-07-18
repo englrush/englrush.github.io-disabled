@@ -378,6 +378,20 @@ body{
         }
     }
 }
+.del-ed{
+    margin-left: auto;
+    margin-top: 6px;
+    gap: 10px;
+    &__edit{
+        background-color: #1D3143;
+        padding: 8px;
+        margin-right: 6px;
+    }
+    &__delete{
+        background-color: #1D3143;
+        padding: 8px;
+    }
+}
 
 .wrapper{
     max-width: calc(100vw - 220px);
