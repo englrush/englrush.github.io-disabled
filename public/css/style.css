@@ -338,16 +338,27 @@ body {
   color: #112639;
 }
 
+.del-ed {
+  margin-left: auto;
+  margin-top: 6px;
+  gap: 10px;
+}
+.del-ed__edit {
+  background-color: #1D3143;
+  padding: 9px 7px 8px 8px;
+  margin-right: 6px;
+}
+.del-ed__delete {
+  background-color: #1D3143;
+  padding: 9px 9px 8px 10px;
+}
+
 .wrapper {
   max-width: calc(100vw - 220px);
-  height: calc(100vh - 60px);
   margin-left: 220px;
-  margin-bottom: 190px;
+  margin-bottom: 100px;
 }
 
 .mini-wrapper {
-  max-width: 100vw;
-  height: calc(100% - 40px);
-  margin: 20px 5%;
-  margin-bottom: 40px;
+  margin: 20px 10%;
 }/*# sourceMappingURL=style.css.map */
