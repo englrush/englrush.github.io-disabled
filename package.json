@@ -17,12 +17,13 @@
   },
   "homepage": "https://github.com/englrush/englrush.github.io#readme",
   "dependencies": {
+    "dotenv": "^16.0.1",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
     "mongoose": "^6.4.4",
     "nodemon": "^2.0.19"
   },
-  "engines":{
+  "engines": {
     "node": "16.14.2"
   }
 }
