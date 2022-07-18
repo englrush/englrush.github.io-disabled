@@ -22,11 +22,22 @@ app.get('/', (req, res) => {
     res.render('index', { title })
 })
 
+app.get('/topics:id', (req, res) => {
+    const title = "Topics"
+    Topic
+        .findById(req.params.id)
+        .then((topic) => res.render('topic', { title, topic }))
+        .catch((e) => {
+            console.log(e)
+            res.render('error', { title: 'Error' });
+        })
+})
+
 app.get('/topics', (req, res) => {
     const title = "Topics"
     Topic
         .find()
-        .sort({ createAd: 1 })
+        //.sort({ createAd: 'descending' })
         .then((topics) => res.render('topics', { title, topics }))
         .catch((e) => {
             console.log(e)
@@ -47,8 +58,9 @@ app.post('/new-topic', (req, res) => {
         .then((result) => res.redirect('/topics'))
         .catch((e) => {
             console.log(e)
-            res.send(e)
-            res.render('error', { title: 'Error' })
+            res
+                .send(e)
+                .render('error', { title: 'Error' })
         })
 
 })

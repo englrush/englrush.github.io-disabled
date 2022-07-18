@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%- include('./partials/head') %>
+
+    <body>
+        <%- include ('./partials/header') %>
+            <%- include ('./partials/aside-add') %>
+                <div class="wrapper">
+                    <div class="mini-wrapper">
+                        <div class="topic-name">
+                            <div class="topic-name__container">
+                                <div class="topic-name__inner-top">
+                                    <a class="topic-name__avatar" href="#">
+                                        <img class="topic-name__img" src="images/avatar-for-topic-name.png">
+                                    </a>
+                                    <h3 class="topic-name__subtitle">
+                                        <%= topic.author %>
+                                    </h3>
+                                    <p class="topic-name__time">
+                                        <%= topic.createdAt.toLocaleDateString() %>
+                                    </p>
+                                    <button>Edit</button>
+                                    <button class="btn-delete" data-id="<%= topic.id %>">Delete</button>
+                                </div>
+                                <h2 class="topic-name__title">
+                                        <%= topic.title %>
+                                </h2>
+                                <p class="topic-name__text">
+                                    <%- topic.text %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    document.addEventListener('click', (e) => {
+                        const id = e.target?.dataset?.id || null
+                        if (id) {
+                            fetch(`/posts/${id}`, {
+                                method: 'DELETE',
+                            })
+                        }
+                    })
+                </script>
+    </body>
+
+</html>
