@@ -7,18 +7,18 @@
             <%- include ('./partials/aside-add') %>
                 <div class="wrapper">
                     <div class="mini-wrapper">
-                        <form class="form" method="post" action="/new-topic">
+                        <form class="form" method="post" action="/edit<%= topic.id %>?_method=PUT">
                             <div class="container">
                                 <div class="form__inner-top">
                                     <h2 class="form__title">New Topic</h2>
                                     <div class="writing-columns">
                                         <div class="column-1">
                                             <h3 class="column-subtitle">Topic Title</h3>
-                                            <input class="column-input c-1" type="text" name="title">
+                                            <input class="column-input c-1" type="text" name="title" value="<%= topic.title %>">
                                         </div>
                                         <div class="column-2">
                                             <h3 class="column-subtitle">Author</h3>
-                                            <input class="column-input c-2" type="text" name="author">
+                                            <input class="column-input c-2" type="text" name="author" value="<%= topic.author %>">
                                         </div>
                                         <!--<div class="column-3">
                                             <h3 class="column-subtitle">Another date</h3>
@@ -27,7 +27,7 @@
                                     </div>
                                 </div>
                                 <div class="textarea">
-                                    <textarea class="text-for-topics" type="text" name="text"></textarea>
+                                    <textarea class="text-for-topics" type="text" name="text"><%= topic.text %></textarea>
                                 </div>
                                 <div class="form-buttons">
                                     <div class="format-btns">

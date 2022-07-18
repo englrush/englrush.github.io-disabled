@@ -21,8 +21,6 @@
                                             <p class="topic-name__time">
                                                 <%= createdAt.toLocaleDateString() %>
                                             </p>
-                                            <button>Edit</button>
-                                            <button class="btn-delete" data-id="<%= id %>">Delete</button>
                                         </div>
                                         <h2 class="topic-name__title">
                                             <a href="topics<%= id %>">
@@ -39,16 +37,6 @@
                              <% } %>
                     </div>
                 </div>
-                <script>
-                    /*document.addEventListener('click', (e) => {
-                        const id = e.target?.dataset?.id || null
-                        if (id) {
-                            fetch(`/posts/${id}`, {
-                                method: 'DELETE',
-                            })
-                        }
-                    })*/
-                </script>
     </body>
 
 </html>
