@@ -19,9 +19,11 @@
                                     <p class="topic-name__time">
                                         <%= topic.createdAt.toLocaleDateString() %>
                                     </p>
-
-                                    <a href="/edit<%= topic.id %>">Edit</a>
-                                    <button class="btn-delete" data-id="<%= topic.id %>">Delete</button>
+                                    
+                                    <div class="delete-edit">
+                                        <a class="delete-edit__edit" href="/edit62d7b269c8cdf4ca1258f05e"><img class="delete-edit__img" src="images/edit.svg" alt=""></a>
+                                        <button class="delete-edit__delete" data-id="62d7b269c8cdf4ca1258f05e"><img class="delete-edit__img" src="images/delete.svg" data-id="62d7b269c8cdf4ca1258f05e"></button>
+                                    </div>
 
                                 </div>
                                 <h2 class="topic-name__title">
