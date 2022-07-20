@@ -378,21 +378,47 @@ body{
         }
     }
 }
-.del-ed{
+
+
+.delete-edit {
     margin-left: auto;
     margin-top: 6px;
-    &__edit{
-        background-color: #1D3143;
-        padding: 9px 7px 8px 8px;
+
+    &__edit {
+        background-color: #1d3143;
+        padding: 9px 7px 6px 8px;
         margin-right: 6px;
         border-radius: 5px;
     }
-    &__delete{
-        background-color: #1D3143;
-        padding: 9px 9px 8px 10px;
+    &__delete {
+        background-color: #1d3143;
+        padding: 9px 9px 6px 9px;
         border-radius: 5px;
     }
 }
+
+
+
+
+// .del-ed{
+//     margin-left: auto;
+//     margin-top: 6px;
+//     &__edit{
+//         background-color: #1D3143;
+//         padding: 9px 7px 8px 8px;
+//         margin-right: 6px;
+//         border-radius: 5px;
+//     }
+//     &__delete{
+//         background-color: #1D3143;
+//         padding: 9px 9px 8px 10px;
+//         border-radius: 5px;
+//     }
+//     &__img{
+//         display: block;
+//         border-radius: 5px;
+//     }
+// }
 
 .wrapper{
     max-width: calc(100vw - 220px);

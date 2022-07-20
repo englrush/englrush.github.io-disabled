@@ -5,14 +5,14 @@
 }
 a{
     text-decoration: none;
-    color: inherit;
+    color:inherit;
     display: inline-block;
 }
 ul{
     list-style: none;
 }
 img{
-    display: block;
+    /* display: block; */
     max-width: 100%;
 }
 button{

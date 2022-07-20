@@ -269,7 +269,7 @@ body {
   margin: 0 auto;
   background: #C3E6F5;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
 }
 .topic-name__inner-top {
   display: flex;
@@ -338,25 +338,25 @@ body {
   color: #112639;
 }
 
-.del-ed {
+.delete-edit {
   margin-left: auto;
   margin-top: 6px;
-  gap: 10px;
 }
-.del-ed__edit {
-  background-color: #1D3143;
-  padding: 9px 7px 8px 8px;
+.delete-edit__edit {
+  background-color: #1d3143;
+  padding: 9px 7px 6px 8px;
   margin-right: 6px;
+  border-radius: 5px;
 }
-.del-ed__delete {
-  background-color: #1D3143;
-  padding: 9px 9px 8px 10px;
+.delete-edit__delete {
+  background-color: #1d3143;
+  padding: 9px 9px 6px 9px;
+  border-radius: 5px;
 }
 
 .wrapper {
   max-width: calc(100vw - 220px);
   margin-left: 220px;
-  margin-bottom: 100px;
 }
 
 .mini-wrapper {
