@@ -304,7 +304,7 @@ body{
         margin: 0 auto;
         background: #C3E6F5;
         border-radius: 10px;
-        margin-bottom: 100px;
+        margin-bottom: 10px;
 
     &__inner-top {
         display: flex;
@@ -397,33 +397,11 @@ body{
     }
 }
 
-
-
-
-// .del-ed{
-//     margin-left: auto;
-//     margin-top: 6px;
-//     &__edit{
-//         background-color: #1D3143;
-//         padding: 9px 7px 8px 8px;
-//         margin-right: 6px;
-//         border-radius: 5px;
-//     }
-//     &__delete{
-//         background-color: #1D3143;
-//         padding: 9px 9px 8px 10px;
-//         border-radius: 5px;
-//     }
-//     &__img{
-//         display: block;
-//         border-radius: 5px;
-//     }
-// }
-
 .wrapper{
     max-width: calc(100vw - 220px);
     margin-left: 220px;
 }
 .mini-wrapper{
     margin: 20px 10%;
+    margin-bottom: 90px;
 }

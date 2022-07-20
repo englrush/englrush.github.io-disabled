@@ -269,7 +269,7 @@ body {
   margin: 0 auto;
   background: #C3E6F5;
   border-radius: 10px;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 .topic-name__inner-top {
   display: flex;
@@ -361,4 +361,5 @@ body {
 
 .mini-wrapper {
   margin: 20px 10%;
+  margin-bottom: 90px;
 }/*# sourceMappingURL=style.css.map */
